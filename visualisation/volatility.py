@@ -42,7 +42,7 @@ ax.plot(df_isk_eur, color='#003399', label='ISK/EUR')
 ax.legend()
 
 ax.set_ylim(bottom=0)
-ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _: '{:.0%}'.format(y)))
+ax.yaxis.set_major_formatter(FuncFormatter(lambda y, _: '{:.0%}\%'.format(y)))
 ax.set_ylabel(Y_DESC)
 ax.set_xlabel("\\'{A}r")
 
