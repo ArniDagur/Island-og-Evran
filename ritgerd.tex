@@ -2,12 +2,18 @@
 % vim: ft=tex:fdm=marker
 \documentclass[a4paper]{article}
 
-% Plugins
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[icelandic]{babel}
+% Plugins {{{
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage[icelandic]{babel}
 
-\usepackage{url}
+    \usepackage{url}
+    % Graphics
+        \usepackage{graphicx}
+        \graphicspath{
+            {visualisation/graphics/}
+        }
+% }}}
 
 \title{Krónan eða Evran fyrir Ísland?}
 \author{Árni Dagur}
@@ -24,6 +30,15 @@ Lengi vel hefur innganga Íslands inn í Evrusvæðið verið umræðumál hér 
 \section{Rök með}
 
 \subsection{Aukinn stöðugleiki gjaldmiðils}
+\begin{figure} %{{{Volatility.png
+    \centerline{
+        \includegraphics{volatility.png}
+    }
+    \caption{Staðalfrávik prósentubreytingar með 90 daga rúllandi ramma. Gögn koma frá Seðlabanka Íslands.}
+    \label{fig:volatility}
+\end{figure} %}}}
+
+Á Mynd \ref{fig:volatility} sést graf sem óstöðugleika íslensku Krónunnar miðað við Bandaríkjadalinn og Evruna. Hann er skilgreindur sem staðalfrávik prósentumuns á 90 daga rúllandi ramma.
 
 \cite{icb_volatility_2008}
 
